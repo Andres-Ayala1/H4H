@@ -1,0 +1,12 @@
+h1 {
+    font-size: 80px;
+    color: purple;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: burlywood;
+}
+#to-style {
+    color: black;
+}
