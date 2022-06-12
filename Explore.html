@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>PetMatch | Explore</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Explore.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -58,12 +59,12 @@
       </div></header>
       <div class="container">
         <div class="adoption-box">
-          <img id="photo" src="images/dog_1.jpeg" class="dog_1">
+          <img class="breed_image"></img>
           <span class="iconify message_box" data-icon="bx:message-detail" style="color: orange;"></span>
-          <h3 id="name">Jake</h3>
-          <p id="description"> Corgi from San Antonio: 5 mths.</p>
-          <div onclick="newPage()">
-            <button type="button" class="red-button">Maybe Later</button> <button type="button" class="green-button">Adopt Me</button>
+          <h3 class="breed_name"></h3>
+          <p class="breed_json"></p>
+          <div onclick="showBreedImage()">
+            <button type="button" id ="breed_selector" class="red-button">Maybe Later</button> <button id="breed_selector" type="button" class="green-button">Adopt Me</button>
           </div>
           <div class="profile-bottom">
             <span class="iconify location-pin" data-icon="cil:location-pin" style="color: orange;"></span>

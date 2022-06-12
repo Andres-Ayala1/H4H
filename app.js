@@ -1,4 +1,4 @@
-list = [
+/* list = [
     {
         name: "Snow",
         photo: "images/dog_2.jpeg",
@@ -39,3 +39,15 @@ function newPage() {
     index = index % list.length 
 
 }
+*/
+
+$.getJSON("https://api.thedogapi.com/v1/breeds?api_key=9d50ddf7-386f-4c44-ae77-93fbf4009df5", function(data){
+    console.log(data);
+
+    var breed_image = data[0].image.url;
+    var breed_name = data[0].name;
+    var breed_json = data[0].temperament + ' ; ' + data[0].life_span;
+    $('.breed_image').attr('src', breed_image);
+    $('.breed_name').append(breed_name);
+    $('.breed_json').append(breed_json);
+});
